@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainMap">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/map_width"
+        android:layout_height="@dimen/map_height"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/menu_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--
+            The function "go to map" that activates in the onClick goes to the google maps activity and exists in MainMap java file
+            The tag helps discern where on the map should the maps activity open.
+        -->
+        <Button
+            android:id="@+id/MaalotButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="28dp"
+            android:onClick="goToMap" android:tag="0"
+            android:text="@string/PaPMaalot"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ShderotButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="10dp"
+            android:onClick="goToMap" android:tag="1"
+            android:text="@string/PaPShderot"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/AshdodButton"
+            app:layout_constraintTop_toBottomOf="@+id/AshdodButton" />
+
+        <Button
+            android:id="@+id/KfarVardimButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="46dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="6dp"
+            android:onClick="goToMap" android:tag="2"
+            android:text="@string/PaPKfarVradim"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/MaalotButton"
+            app:layout_constraintTop_toBottomOf="@+id/MaalotButton" />
+
+        <Button
+            android:id="@+id/TalElButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="8dp"
+            android:onClick="goToMap" android:tag="3"
+            android:text="@string/PaPTalEl"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/KfarVardimButton"
+            app:layout_constraintTop_toBottomOf="@+id/KfarVardimButton" />
+
+        <Button
+            android:id="@+id/CholonButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="12dp"
+            android:onClick="goToMap" android:tag="4"
+            android:text="@string/PaPCholon"
+            android:textSize="8sp"
+            app:layout_constraintRight_toLeftOf="@+id/TalElButton"
+            app:layout_constraintTop_toBottomOf="@+id/TalElButton" />
+
+        <Button
+            android:id="@+id/AshdodButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="14dp"
+            android:onClick="goToMap" android:tag="5"
+            android:text="@string/PaPAshdod"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/CholonButton"
+            app:layout_constraintTop_toBottomOf="@+id/CholonButton" />
+
+        <Button
+            android:id="@+id/TfachotButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="8dp"
+            android:onClick="goToMap" android:tag="6"
+            android:text="@string/PaPTfachot"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/BarYochayButton7"
+            app:layout_constraintTop_toBottomOf="@+id/BarYochayButton7" />
+
+        <Button
+            android:id="@+id/DaltonButton"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="goToMap" android:tag="7"
+            android:text="@string/PaPDalton"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toRightOf="@+id/MaalotButton"
+            app:layout_constraintTop_toTopOf="@+id/MaalotButton" />
+
+        <Button
+            android:id="@+id/BarYochayButton7"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:layout_width="38dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="8dp"
+            android:onClick="goToMap" android:tag="8"
+            android:text="@string/PaPBarYochay"
+            android:textSize="8sp"
+            app:layout_constraintRight_toRightOf="@+id/DaltonButton"
+            app:layout_constraintTop_toBottomOf="@+id/DaltonButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
