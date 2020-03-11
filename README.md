@@ -3,7 +3,7 @@
 Panim El-Panim (Face to Face) is a movement that attempts to close the gaps between the different parts of the nation.
 Activist go house to house and just talk about the important topics to create an understanding between people that normally have no contact.
 
-The code works with global vars on the idea that at no point can towo houses be active.
+The code works with global vars on the idea that at no point can tow houses be active.
 
 The app has a lot of missing features but it is a free app and I do not have the time to work on it:
 1. No google search bar to find an address (use some free geocoding third party API)
