@@ -16,3 +16,5 @@ The app has a lot of missing features but it is a free app and I do not have the
 
 Known Bugs:
 1. The keyboard won't go down for some users and that hides the submit button which is why I put it near the top. Fix it and put him back down.
+
+For any questions my personal email is nachumolman@gmail.com. Send mails with the subject "About the App...".
